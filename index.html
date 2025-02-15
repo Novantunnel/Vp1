@@ -1525,7 +1525,7 @@ function uuidv4() {
 }
 
   // URL untuk mendapatkan proxy list
-  fetch("https://raw.githubusercontent.com/Novantunnel/p/refs/heads/main/id.txt")
+  fetch("https://raw.githubusercontent.com/Novantunnel/p/refs/heads/main/proxy.txt")
     .then(response => response.text())
     .then(data => {
       const allProxies = data.split("\n").filter(line => line.trim() !== "");
