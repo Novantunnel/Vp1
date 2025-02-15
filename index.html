@@ -1584,7 +1584,7 @@ function uuidv4() {
   statusElement.innerHTML = '<div class="loading-icon"></div>';
 
   const startTime = performance.now(); // Mencatat waktu awal
-  const CHECK_API_BASE = "https://cf.apiproxy.us.kg"; // Get base URL from secrets
+  const StatusURL = `https://cf.apiproxy.us.kg/check?target=${ip}:${port}`;
 
   // Mengambil data dari API untuk memeriksa status proxy
   fetch(StatusURL)
